@@ -1,0 +1,23 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DiceEngine"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://addons/dice_engine/dice_engine.svg"
+
+[autoload]
+
+Dice="*res://addons/dice_engine/dice_engine.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dice_engine/plugin.cfg")
