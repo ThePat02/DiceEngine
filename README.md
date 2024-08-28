@@ -1,7 +1,12 @@
 # DiceEngine
 
-![DiceEngine](addons/dice_engine/dice_engine.svg)
-**DiceEngine** is a simple Dice Roller for the Godot Engine 4.x written in `GDScript`!
+<p align="center">
+  <img src="addons\dice_engine\dice_engine.svg" alt="DiceEngine Icon" width="128" height="128">
+</p>
+
+<p align="center">
+  <b>DiceEngine</b> is a simple Dice Roller for the Godot Engine 4.x written in `GDScript`!
+</p>
 
 
 ## Features
@@ -31,7 +36,8 @@ The core of this plugin is the `DiceEngine` class. It provides all the functiona
 
 ```gdscript
 class_name DiceEngine extends Node
-## A simple dice engine that can roll dice with a certain number of sides and amount, and return the result in different ways.
+## A simple dice engine that can roll dice with a certain number of sides and amount,
+## and return the result in different ways.
 
 ## Emitted when a dice roll is performed.
 signal rolled_dice(result: int, dice_results: Array[int], dice_amount: int, dice_sides: int, roll_type: RollType)
