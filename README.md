@@ -11,7 +11,7 @@
 
 ## Features
 - Roll any number of dice with any number of sides
-- Perform and check the results of `Roll` resources that can represent skill checks in your game
+- Perform and check the results of `DiceCheck` resources that can represent skill checks in your game
 
 
 ## Installation
