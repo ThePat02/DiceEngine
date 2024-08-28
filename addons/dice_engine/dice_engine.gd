@@ -51,10 +51,10 @@ func roll(amount: int, sides: int, roll_type: RollType = RollType.SUM) -> int:
 
 
 ## Rolls a number of dice with a certain number of sides multiple times.
-func roll_multiple(times: int = 1, amount: int, sides: int, roll_type: RollType = RollType.SUM) -> Array[int]:
+func roll_multiple(times: int, amount: int, sides: int, roll_type: RollType = RollType.SUM) -> Array[int]:
     var results: Array[int] = []
 
-    for _ in range(times):
+    for time in range(times):
         results.append(roll(amount, sides, roll_type))
 
     return results

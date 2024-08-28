@@ -20,8 +20,9 @@
 
 
 ## Usage
+All functionalities are documented in the in-game documentation. You can access it by pressing `F1` in the Godot Editor and searching for `DiceEngine` or `DiceCheck`.
 
-### Dice Singleton
+### ![Singleton](addons/dice_engine/dice.svg) Dice Singleton
 This plugin automatically adds a new `Dice` singleton to your project. You can access it from any script using something like this:
 ```gdscript
 # Rolls 2 six-sided dice and returns the sum
@@ -31,7 +32,7 @@ var result_sum: int = Dice.roll(2, 6) # 2d6
 var result_multiple: Array[int] = Dice.roll_multiple(3, 4, 6) # 3x 4d6
 ```
 
-### DiceEngine
+### ![Singleton](addons/dice_engine/dice.svg) DiceEngine
 The core of this plugin is the `DiceEngine` class. It provides all the functionality to roll dice and gather the results. It has the following enums, methods and signals:
 
 ```gdscript
@@ -65,11 +66,11 @@ enum RollType {
 func roll(amount: int, sides: int, roll_type: RollType = RollType.SUM) -> int
 
 ## Rolls a number of dice with a certain number of sides multiple times.
-func roll_multiple(times: int = 1, amount: int, sides: int, roll_type: RollType = RollType.SUM) -> Array[int]
+func roll_multiple(times: int, amount: int, sides: int, roll_type: RollType = RollType.SUM) -> Array[int]
 ```
 
-### Roll Resource
-Using the `Roll` resource, you can save perform dice roll checks (or more specifically, skill checks) and gather the results. I suggest, using this to store custom rolls inside your own skill check resource! It has the following properties and methods:
+### ![DiceCheck](/addons/dice_engine/roll.svg) DiceCheck Resource
+Using the `DiceCheck` resource, you can save perform dice roll checks (or more specifically, skill checks) and gather the results. I suggest, using this to store custom rolls inside your own skill check resource! It has the following properties and methods:
 
 ```gdscript
 class_name DiceCheck extends Resource

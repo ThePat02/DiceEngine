@@ -1,3 +1,4 @@
+@icon("res://addons/dice_engine/roll.svg")
 class_name DiceCheck extends Resource
 ## A simple dice check that can be used to compare the result of a dice roll with a certain value.
 
