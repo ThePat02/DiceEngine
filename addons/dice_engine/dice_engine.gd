@@ -32,7 +32,7 @@ func roll(amount: int, sides: int, roll_type: RollType = RollType.SUM) -> int:
     var dice_results: Array[int] = []
 
     for die in range(amount):
-        dice_results.append(randi() % sides + 1)
+        dice_results.append(randi_range(1, sides))
     
     var result: int = 0
     match roll_type:
